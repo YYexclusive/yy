@@ -15,22 +15,22 @@ div{
 #c{
     background-image: url("../img/11.jpg");
     animation:c  10s    infinite ;
-    background-size:50%  ;
+    background-size:100%  100% ;
 }
 #x{
     background-image: url("../img/22.jpg");
     animation:x  10s    infinite;
-    background-size:50%  ;
+    background-size:100%  100% ;
 }
 #q{ ;
     background-image: url("../img/33.jpg");
     animation:q  10s    infinite ;
-    background-size:50%  ;
+    background-size:100%  100% ;
 }
 #d{
    background-image: url("../img/44.jpg");
     animation:d  10s    infinite ;
-    background-size:50%  ;
+    background-size:100%  100% ;
 }
 #y{
     font-size: 50px;
