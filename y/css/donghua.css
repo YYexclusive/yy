@@ -34,21 +34,11 @@ div{
     animation:y   8s    infinite ;
 }
 @keyframes y {
-    0% {
-        opacity: 0
-    }
-    70% {
-        opacity: 0
-    }
-    80% {
-        opacity: 100
-    }
-    90% {
-        opacity: 100
-    }
-    100% {
-        opacity: 0
-    }
+    0% {opacity: 0}
+    70% {opacity: 0}
+    80% {opacity: 100}
+    90% {opacity:0}
+    100% {opacity: 0}
 }
 @keyframes c {
     0%{opacity: 0 }
