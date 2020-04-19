@@ -9,27 +9,31 @@ div{
     font-size:150px;
     position: absolute;
     padding-top: 60%;
-    padding-left:40%;
+    padding-left:50%;
 }
 
 #c{
-    background:forestgreen;
+    background-image: url("../img/11.jpg");
     animation:c  10s    infinite ;
+    background-size:50%  ;
 }
 #x{
-    background: steelblue;
+    background-image: url("../img/22.jpg");
     animation:x  10s    infinite;
+    background-size:50%  ;
 }
-#q{
-    background: orange;
+#q{ ;
+    background-image: url("../img/33.jpg");
     animation:q  10s    infinite ;
+    background-size:50%  ;
 }
 #d{
-    background: mintcream;
+   background-image: url("../img/44.jpg");
     animation:d  10s    infinite ;
+    background-size:50%  ;
 }
 #y{
-    font-size: 90px;
+    font-size: 50px;
     display: block;
     animation:y   10s    infinite ;
 }
