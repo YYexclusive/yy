@@ -2,7 +2,6 @@ html,body,div{
     height: 100%;
     width:100%;
     margin: 0;
-
 }
 
 div{
@@ -12,21 +11,44 @@ div{
     padding-top: 60%;
     padding-left:40%;
 }
+
 #c{
-    background: lawngreen;
-    animation:c  4s    infinite ;
+    background:forestgreen;
+    animation:c  8s    infinite ;
 }
 #x{
-    background: aqua;
-    animation:x  4s    infinite ;
+    background: steelblue;
+    animation:x  8s    infinite;
 }
 #q{
     background: orange;
-    animation:q  4s    infinite ;
+    animation:q  8s    infinite ;
 }
 #d{
     background: mintcream;
-    animation:d  4s    infinite ;
+    animation:d  8s    infinite ;
+}
+#y{
+    font-size: 90px;
+    display: block;
+    animation:y   8s    infinite ;
+}
+@keyframes y {
+    0% {
+        opacity: 0
+    }
+    70% {
+        opacity: 0
+    }
+    80% {
+        opacity: 100
+    }
+    90% {
+        opacity: 100
+    }
+    100% {
+        opacity: 0
+    }
 }
 @keyframes c {
     0%{opacity: 0 }
