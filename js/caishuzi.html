@@ -6,9 +6,10 @@
 
     <style type="text/css">
         body{
-            font-size: 200px;
+            font-size: 100px;
             color: orange;
-            margin: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
 
         }
     </style>
@@ -20,26 +21,38 @@
 
 </body>
 <script>
-var binggo=false;
-function cai() {
-    if (binggo){
-        return;
+    var binggo = false;
+
+    function cai() {
+        if (binggo) {
+            return;
+        }
+        var cai = prompt("输入数字");
+        console.info("a=="+a);
+        console.info("cai=="+cai);
+        var cha=Math.abs(a-cai);//Math.abs()绝对值
+        console.info("cha=="+cha);
+        if (cai == a) {
+            document.write("<img src=\"img/" + a + ".gif\"/>")
+            document.getElementById("yy").innerHTML = "猜中了";
+            binggo = true;
+        }
+        else if (cai > a&&cha>1) {
+            document.getElementById("yy").innerHTML = "猜的太大了";
+        }
+        else if (cai > a&&cha<=1) {
+            document.getElementById("yy").innerHTML = "猜的有点大了";
+        }
+        else if (cai < a&&cha>1) {
+            document.getElementById("yy").innerHTML = "猜的太小了";
+        }
+        else if (cai < a&&cha<=1) {
+            document.getElementById("yy").innerHTML = "猜的有点小了";
+        }
     }
-    var cai = prompt("输入数字")
-    if (cai == a) {
-        document.getElementById("yy").innerHTML = "猜中了";
-        binggo = true;
-    }
-    else if (cai > a) {
-        document.getElementById("yy").innerHTML = "猜大了";
-    }
-    else if (cai < a) {
-        document.getElementById("yy").innerHTML = "猜小了";
-    }
-}
 
 //猜数字
-var a=Math.random();
+var a=Math.random();//Math.random 随机数
 a=Math.floor(a*6)+1;
 console.info(a);
 //document.write(a);
